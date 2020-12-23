@@ -237,7 +237,7 @@ class Listing extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className = 'col-sm-3'><b>Occupation:</b></div>
-                                    <div className = 'col-sm-9'>{this.state.profile[0].occupation.join()}</div>
+                                    <div className = 'col-sm-9'>{this.state.profile[0].occupation?this.state.profile[0].occupation.join():null}</div>
                                 </div>
                                 <div className='row'>
                                     <div className = 'col-sm-3'><b>Status:</b></div>
@@ -253,7 +253,7 @@ class Listing extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className = 'col-sm-3'><b>Seasons:</b></div>
-                                    <div className = 'col-sm-9'>{this.state.profile[0].appearance.join()}</div>
+                                    <div className = 'col-sm-9'>{this.state.profile[0].appearance?this.state.profile[0].appearance.join():null}</div>
                                 </div>
                                 <div className='row'>
                                     <div className = 'col-sm-3'><b>Quotes:</b></div>
